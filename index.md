@@ -5,7 +5,7 @@ author      : Steve Hoang
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 hitheme     : solarized_light      #
 highlighter : highlight  # {highlight.js, prettify, highlight}
-url         : {lib: "../../libraries"}
+# url         : {lib: "../../libraries"}
 logo        : HS_logo.png
 biglogo     : HS_logo.png
 widgets     : [mathjax, quiz]            # {mathjax, quiz, bootstrap}
@@ -13,7 +13,7 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify:sh:knit2slides
 github:
   user: stevehoang
-  repo: lunch_n_learn
+  repo: lunch_n_learn2
 ---.dark .nobackground .quote
 
 <q>Much of the work of a computational biologist involves reframing biological questions in a rigorous mathematical context. Once this is accomplished we can use the tools of applied mathematics to gain insight into the biology.</q>
