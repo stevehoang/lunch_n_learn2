@@ -1,0 +1,12 @@
+base
+slidify
+slidifyLibraries
+xtable
+magrittr
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr

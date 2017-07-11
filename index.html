@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Computers, WOW.</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Computers, WOW.">
+  <meta name="author" content="Steve Hoang">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../../libraries/highlighters/highlight/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../../libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/custom.css"></link>
+<link rel=stylesheet href="./assets/css/logo_ar.css"></link>
+<link rel=stylesheet href="./assets/css/mainapp.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+<link rel=stylesheet href="./assets/css/title_slide_bg.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../../libraries/frameworks/io2012/js/slides" 
+    src="../../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+      <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/HS_logo.png">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/HS_logo.png">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Computers, WOW.</h1>
+    <h2>Applications in barbecue, metabolism, and more!</h2>
+    <p>Steve Hoang<br/></p>
+  </hgroup>
+    <a href="https://github.com/stevehoang/lunch_n_learn/zipball/gh-pages" class="example">
+     Download
+    </a>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="dark nobackground quote" id="slide-1" style="background:;">
+  <article data-timings="">
+    <p><q>Much of the work of a computational biologist involves reframing biological questions in a rigorous mathematical context. Once this is accomplished we can use the tools of applied mathematics to gain insight into the biology.</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Beauty in generality</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Many diverse problems: One solution.</h3>
+
+<ul class = "build incremental">
+<li>supply chain management</li>
+<li>airline scheduling</li>
+<li>staffing</li>
+<li>military deployment</li>
+<li>waste management</li>
+<li>investment planning</li>
+<li>transportation engineering</li>
+<li>modeling metabolism</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark nobackground quote" id="slide-3" style="background:;">
+  <article data-timings="">
+    <p><q>Major problems in each field can be addressed with a technique known as <strong>linear</strong> <strong>programming</strong>.</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>A little history</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li>Linear programming is a subfield of mathematical programming (B.K.A. mathematical optimization)</li>
+<li>The theory behind linear programming was worked out in the 1940s by Soviet and American mathematicians (primarily Leonid Kantorovich, George Dantzig, and John von Neumann).</li>
+<li>The development was motivated by the desire to solve complex logistical military problems.</li>
+<li>The words &quot;program&quot; / &quot;programming&quot; do not refer to computer programming. Rather, they refer to logistics schedules, which were referred to as &quot;programs&quot; by the U.S. military at the time.</li>
+<li>Linear programming is now ubiquitous. Many industires with high logistical demands are wholly reliant linear programming and related techniques; e.g., airlines, delivery services, etc.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark nobackground quote" id="slide-5" style="background:;">
+  <article data-timings="">
+    <p><q>In linear programming, one searches for the <strong>best</strong> way to <strong>allocate</strong> resources under a set of <strong>constraints</strong>.</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>What does a linear program look like?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>You loved them; they&#39;re back: Word problems.</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>What does a linear program look like?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>You loved them; they&#39;re back: Word problems.</h3>
+
+<p>Meremy Jauldin just founded &quot;Humvees n&#39; Hickories Barbecue Company&quot; where he expects to find his fortune and true calling. He plans on starting off with an offering of pulled pork, and of course his greatest passion, brisket. The profit margins on batches of pork and brisket are \$300 and $500, respectively. Meremy&#39;s secret 2-step smoking process requires both hickory and apple wood. The brisket takes 15 hours in the hickory smoker and 3 hours in the apple wood smoker. The pork takes 3 hours in the hickory smoker and 12 hours in the apple wood smoker. He&#39;s got 120 smoker-hours per smoker per week. He wants to make at least 3 batches of each offering per week. How many batches of each should he make (and sell) per week to maximize his profits?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>What does a linear program look like?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>You loved them; they&#39;re back: Word problems.</h3>
+
+<p>Meremy Jauldin just founded &quot;Humvees n&#39; Hickories Barbecue Company&quot; where he expects to find his fortune and true calling. He plans on starting off with an offering of pulled pork, and of course his greatest passion, brisket. The profit margins on batches of pork and brisket are \$300 and $500, respectively. Meremy&#39;s secret 2-step smoking process requires both hickory and apple wood. The brisket takes 15 hours in the hickory smoker and 3 hours in the apple wood smoker. The pork takes 3 hours in the hickory smoker and 12 hours in the apple wood smoker. He&#39;s got 120 smoker-hours per smoker per week. He wants to make at least 3 batches of each offering per week. How many batches of each should he make (and sell) per week to maximize his profits?</p>
+
+<!-- html table generated in R 3.3.3 by xtable 1.8-2 package -->
+
+<!-- Tue Jul 11 09:08:20 2017 -->
+
+<table border=1>
+<tr> <th>  </th> <th> BBQ </th> <th> apple_time </th> <th> hickory_time </th> <th> min_batch </th> <th> profit </th>  </tr>
+  <tr> <td align="right"> 1 </td> <td> Pulled Pork </td> <td> 12 hrs </td> <td> 3 hrs </td> <td> 3 </td> <td> $300 </td> </tr>
+  <tr> <td align="right"> 2 </td> <td> Brisket </td> <td> 3 hrs </td> <td> 15 hrs </td> <td> 3 </td> <td> $500 </td> </tr>
+   </table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>How can we mathematically define an LP?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The first step is to define all of the constraints.</p>
+
+<p>The constraints on the hickory smoker:
+\[15b+3p\leq120\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>How can we mathematically define an LP?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The first step is to define all of the constraints.</p>
+
+<p>The constraints on the hickory smoker:
+\[15b+3p\leq120\]
+The apple wood smoker:
+\[3b+12p\leq120\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>How can we mathematically define an LP?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The first step is to define all of the constraints.</p>
+
+<p>The constraints on the hickory smoker:
+\[15b+3p\leq120\]
+The apple wood smoker:
+\[3b+12p\leq120\]
+The minimum number of batches:
+\[p\geq3\]
+\[b\geq3\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>How can we mathematically define an LP?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Next we need to define the &quot;objective function,&quot; which is profit in this case:
+\[P=300p+500b\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>How can we mathematically define an LP?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Now we have the full linear program:</p>
+
+<p>constraints:
+\[15b+3p\leq120\]
+\[3b+12p\leq120\]
+\[p\geq3\]
+\[b\geq3\]
+objective:
+\[P=300p+500b\]</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>The geometric interpretation of an LP</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>We can visualize the constraints on a plot:
+\[15b+3p\leq120\]</p>
+
+<!-- $$3b+12p\leq120$$ -->
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>The geometric interpretation of an LP</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>We can visualize the constraints on a plot:
+\[15b+3p\leq120\]
+\[3b+12p\leq120\]</p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-3-1.png" alt="plot of chunk unnamed-chunk-3"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>The geometric interpretation of an LP</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>We can visualize the constraints on a plot:
+\[15b+3p\leq120\]
+\[3b+12p\leq120\]
+\[p\geq3\]
+\[b\geq3\]</p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>The geometric interpretation of an LP</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>We can visualize the constraints on a plot:
+\[15b+3p\leq120\]
+\[3b+12p\leq120\]
+\[p\geq3\]
+\[b\geq3\]</p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-5-1.png" alt="plot of chunk unnamed-chunk-5"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>A remarkable theorem</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>The corner point theorem guarantees that an optimal solution will be found at one of the corner points (vertices):</p>
+
+<ol>
+<li>(3, 3)</li>
+<li>(6.32, 8.42)</li>
+<li>(3, 9.25)</li>
+<li>(7.4, 3)</li>
+</ol>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>A remarkable theorem</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>The corner point theorem guarantees that an optimal solution will be found at one of the corner points (vertices):</p>
+
+<ol>
+<li>(3, 3)</li>
+<li>(6.32, 8.42)</li>
+<li>(3, 9.25)</li>
+<li>(7.4, 3)</li>
+</ol>
+
+<p>The objective function (i.e., profits) are maximized when b=6.32 and p=8.42:
+\[P(b,p)=500b+300p\]
+\[P(6.32,8.42)=500\times6.32+300\times8.42=5686\]</p>
+
+<p>Spend your new fortune wisely, Meremy!</p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="assets/fig/unnamed-chunk-7-1.png" alt="plot of chunk unnamed-chunk-7"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Moving into higher dimensions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The barbecue problem was a 2 dimensional problem with 4 inequalities (constraints). A three dimensional problem has (surprise!) a 3 dimensional solution space. The number of inequalities determines the number of facets of the polytope.</p>
+
+<div style='text-align: center;'>
+    <img height='300' src='./assets/img/3dpoly.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Moving into higher dimensions</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The barbecue problem was a 2 dimensional problem with 4 inequalities (constraints). A three dimensional problem has (surprise) a 3 dimensional solution space. The number of inequalities determines the number of facets of the polytope.</p>
+
+<div style='text-align: center;'>
+    <img height='300' src='./assets/img/3dpoly.png' />
+</div>
+
+<p>Many real world problems have tens of thousands of dimensions and constraints. </p>
+
+<p>If only we had some kind of automatic arithmetic doing thingy...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>The simplex algorithm</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Even very large linear programs can be solved rapidly with computers and efficient algorithms.</p>
+
+<div style='text-align: center;'>
+    <img height='350' src='./assets/img/simplex1.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>The simplex algorithm</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Even very large linear programs can be solved rapidly with computers and efficient algorithms.</p>
+
+<div style='text-align: center;'>
+    <img height='350' src='./assets/img/simplex2.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>The simplex algorithm</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Even very large linear programs can be solved rapidly with computers and efficient algorithms.</p>
+
+<div style='text-align: center;'>
+    <img height='350' src='./assets/img/simplex2.png' />
+</div>
+
+<p>With improvements in computing technology and algorithmic efficiency, certain types of LPs can be solved hundreds of billions of times faster than they could just 25 years ago.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>How is LP used in computational biology?</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Problems in computational biology are very diverse. The applications of such a general technique is largely limited by the creativity of the user.</h3>
+
+<ul class = "build incremental">
+<li>Cancer diagnosis</li>
+<li>Biological sequence alignment</li>
+<li>Protein folding models</li>
+<li>Haplotype retrevial with missing information</li>
+<li>Prediction of disease susceptibility given genotypes</li>
+<li>Genome-scale prediction of metabolite utilzation (i.e., flux)</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Genome-scale models of metabolism</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img height='550' src='./assets/img/kegg_metabolism.png' />
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Genome-scale models of metabolism</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img height='450' src='./assets/img/BCAA_image_crop.png' />
+</div>
+
+<h3>For every reaction, mass in must equal mass out - debits must equal credits.</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark nobackground quote" id="slide-28" style="background:;">
+  <article data-timings="">
+    <p><q>Reaction stoichiometries and the laws of thermodynamics provide system-wide constraints. Under these constraints, we want to <strong>find the flux distribution that best matches our data</strong>.</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2><em>In silico</em> models of propionic acidemia</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img height='400' src='./assets/img/prod_of_ppcoa_resting_1.png' />
+</div>
+
+<p>Our <em>in silico</em> models recapitulate the disease phenotype.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  <hgroup>
+    <h2><em>In silico</em> target search</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img height='400' src='./assets/img/prod_of_ppcoa_resting_1.png' />
+</div>
+
+<p>To conduct a target search we add constraints to the model to simulate a therapeutic intervention. E.g., we can constrain the flux through a particular reaction to be zero, which simulates the effect of an inhibitor. Constraints that reduce the predicted production of P-CoA correspond to potential targets.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-31" style="background:;">
+  <hgroup>
+    <h2><em>In silico</em> target search</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img height='450' src='./assets/img/prod_of_ppcoa_KD_conditions_force_valine_genes_3.png' />
+</div>
+
+<p>~10 reactions out of ~4000 are predicted to affect the production of P-CoA</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  <hgroup>
+    <h2><em>In silico</em> target search</h2>
+  </hgroup>
+  <article data-timings="">
+    <div style='text-align: center;'>
+    <img height='450' src='./assets/img/prod_of_ppcoa_KD_conditions_force_valine_genes_3.png' />
+</div>
+
+<ul>
+<li>Apply the same strategy to new rare diseases</li>
+<li>Similar, but slightly different approach in NASH</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark nobackground quote" id="slide-33" style="background:;">
+  <article data-timings="">
+    <p><q> <strong>Linear programming</strong> is one of many tools in the computational biologist&#39;s kit for <strong>integrating</strong> experimental <strong>data</strong> with existing <strong>knowledge</strong> to yield <strong>new insights</strong>. </q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Beauty in generality'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='A little history'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='NA'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='What does a linear program look like?'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='What does a linear program look like?'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='What does a linear program look like?'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='How can we mathematically define an LP?'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='How can we mathematically define an LP?'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='How can we mathematically define an LP?'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='How can we mathematically define an LP?'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='How can we mathematically define an LP?'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='The geometric interpretation of an LP'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='The geometric interpretation of an LP'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='The geometric interpretation of an LP'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='The geometric interpretation of an LP'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='A remarkable theorem'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='A remarkable theorem'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Moving into higher dimensions'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Moving into higher dimensions'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='The simplex algorithm'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='The simplex algorithm'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='The simplex algorithm'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='How is LP used in computational biology?'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Genome-scale models of metabolism'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Genome-scale models of metabolism'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='NA'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='<em>In silico</em> models of propionic acidemia'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='<em>In silico</em> target search'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='<em>In silico</em> target search'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='<em>In silico</em> target search'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='NA'>
+         33
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="../../libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="../../libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="../../libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+ 
+  </html>
