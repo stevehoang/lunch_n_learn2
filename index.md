@@ -3,9 +3,9 @@ title       : Computers, WOW.
 subtitle    : Applications in barbecue, metabolism, and more!
 author      : Steve Hoang
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-# hitheme     : solarized_light      #
+hitheme     : solarized_light      #
 highlighter : highlight  # {highlight.js, prettify, highlight}
-# url         : {lib: "../../libraries"}
+url         : {lib: "../../libraries"}
 logo        : HS_logo.png
 biglogo     : HS_logo.png
 widgets     : [mathjax, quiz]            # {mathjax, quiz, bootstrap}
@@ -287,7 +287,7 @@ Even very large linear programs can be solved rapidly with computers and efficie
     <img height='350' src='./assets/img/simplex2.png' />
 </div>
 
-With improvements in computing technology and algorithmic efficiency, certain types of LPs can be solved hundreds of billions of times faster than they could just 25 years ago.
+With improvements in computing technology and algorithmic efficiency, certain types of LPs can be solved billions of times faster than they could just 25 years ago.
 
 ---
 

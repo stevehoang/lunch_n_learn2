@@ -404,7 +404,7 @@ Even very large linear programs can be solved rapidly with computers and efficie
     <img height='350' src='./assets/img/simplex2.png' />
 </div>
 
-With improvements in computing technology and algorithmic efficiency, certain types of LPs can be solved hundreds of billions of times faster than they could just 25 years ago.
+With improvements in computing technology and algorithmic efficiency, certain types of LPs can be solved billions of times faster than they could just 25 years ago.
 
 ---
 
