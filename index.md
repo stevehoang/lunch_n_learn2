@@ -73,7 +73,7 @@ Meremy Jauldin just founded "Humvees n' Hickories Barbecue Company" where he exp
 Meremy Jauldin just founded "Humvees n' Hickories Barbecue Company" where he expects to find his fortune and true calling. He plans on starting off with an offering of pulled pork, and of course his greatest passion, brisket. The profit margins on batches of pork and brisket are \\$300 and \$500, respectively. Meremy's secret 2-step smoking process requires both hickory and apple wood. The brisket takes 15 hours in the hickory smoker and 3 hours in the apple wood smoker. The pork takes 3 hours in the hickory smoker and 12 hours in the apple wood smoker. He's got 120 smoker-hours per smoker per week. He wants to make at least 3 batches of each offering per week. How many batches of each should he make (and sell) per week to maximize his profits?
 
 <!-- html table generated in R 3.3.3 by xtable 1.8-2 package -->
-<!-- Thu Jul 13 12:16:23 2017 -->
+<!-- Tue Jul 11 09:31:07 2017 -->
 <table border=1>
 <tr> <th>  </th> <th> BBQ </th> <th> apple_time </th> <th> hickory_time </th> <th> min_batch </th> <th> profit </th>  </tr>
   <tr> <td align="right"> 1 </td> <td> Pulled Pork </td> <td> 12 hrs </td> <td> 3 hrs </td> <td> 3 </td> <td> $300 </td> </tr>
@@ -143,7 +143,7 @@ $$15b+3p\leq120$$
 
 *** =right
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 --- &twocol
 
@@ -157,23 +157,7 @@ $$3b+12p\leq120$$
 
 *** =right
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png)
-
---- &twocol
-
-## The geometric interpretation of an LP
-
-*** =left
-
-We can visualize the constraints on a plot:
-$$15b+3p\leq120$$
-$$3b+12p\leq120$$
-$$p\geq3$$
-$$b\geq3$$
-
-*** =right
-
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
+![plot of chunk unnamed-chunk-3](assets/fig/unnamed-chunk-3-1.png)
 
 --- &twocol
 
@@ -189,7 +173,23 @@ $$b\geq3$$
 
 *** =right
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
+
+--- &twocol
+
+## The geometric interpretation of an LP
+
+*** =left
+
+We can visualize the constraints on a plot:
+$$15b+3p\leq120$$
+$$3b+12p\leq120$$
+$$p\geq3$$
+$$b\geq3$$
+
+*** =right
+
+![plot of chunk unnamed-chunk-5](assets/fig/unnamed-chunk-5-1.png)
 
 --- &twocol
 
@@ -206,7 +206,7 @@ The corner point theorem guarantees that an optimal solution will be found at on
 
 *** =right
 
-![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](assets/fig/unnamed-chunk-6-1.png)
 
 --- &twocol
 
@@ -229,7 +229,7 @@ Spend your new fortune wisely, Meremy!
 
 *** =right
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](assets/fig/unnamed-chunk-7-1.png)
 
 ---
 
