@@ -3,7 +3,7 @@ title       : Computers, WOW.
 subtitle    : Applications in barbecue, metabolism, and more!
 author      : Steve Hoang
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-hitheme     : solarized_light      #
+# hitheme     : solarized_light      #
 highlighter : highlight  # {highlight.js, prettify, highlight}
 # url         : {lib: "../../libraries"}
 logo        : HS_logo.png
