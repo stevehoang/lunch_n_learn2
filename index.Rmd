@@ -5,7 +5,7 @@ author      : Steve Hoang
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 hitheme     : solarized_light      #
 highlighter : highlight  # {highlight.js, prettify, highlight}
-url         : {lib: "../../libraries"}
+# url         : {lib: "../../libraries"}
 logo        : HS_logo.png
 biglogo     : HS_logo.png
 widgets     : [mathjax, quiz]            # {mathjax, quiz, bootstrap}
